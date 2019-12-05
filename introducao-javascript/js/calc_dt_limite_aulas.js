@@ -20,4 +20,4 @@ var weekdays = getWeekdaysInMonth(02, 2019);
 
 var teste = document.querySelector("#teste");
 
-teste.textContent = weekdays;,
+teste.textContent = weekdays;
