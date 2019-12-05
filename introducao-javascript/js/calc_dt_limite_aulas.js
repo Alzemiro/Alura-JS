@@ -16,7 +16,7 @@ function getWeekdaysInMonth(month, year) {
     return weekdays;
 }
 
-var weekdays = getWeekdaysInMonth(02, 2019);
+var weekdays = getWeekdaysInMonth(11, 2019);
 
 var teste = document.querySelector("#teste");
 
