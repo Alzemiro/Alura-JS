@@ -9,8 +9,24 @@
 </head>
 
 <body>
-    <p id="teste">aa</p>
+    <p id="teste"></p>
     <script src="js/calc_dt_limite_aulas.js"></script>
+
+    <label for="Hr-cntr">Horas Contratadas</label>
+    <input type="number" id="Hr-cntr">
+    <label for="Hr-por-aula">Hora por aula</label>
+    <input type="time" id="Hr-por-aula">
+    <div id="checkboxes">
+        <ul style="list-style: none;">
+            <label>Dias da Semana</label>
+            <li><input type="checkbox" class=".check3" value="0">Segunda-feira</li>
+            <li><input type="checkbox" class=".check3" value="1">Terça-feira</li>
+            <li><input type="checkbox" class=".check3" value="2">Quarta-feira</li>
+            <li><input type="checkbox" class=".check3" value="3">Quinta-feira</li>
+            <li><input type="checkbox" class=".check3" value="4">Sexta-feira</li>
+        </ul>
+    </div>
+    <button onclick="qtd_meses()">Calcular</button>
 </body>
 
 </html>

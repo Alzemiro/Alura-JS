@@ -18,6 +18,23 @@ function getWeekdaysInMonth(month, year) {
 
 var weekdays = getWeekdaysInMonth(11, 2019);
 
-var teste = document.querySelector("#teste");
 
-teste.textContent = weekdays;
+function SemanaCheckBox() {
+    var inputs = document.querySelectorAll(".check3");
+    var incrementa = 10;
+    for (i = 0; i < inputs.length; i++) {
+        if (inputs[i].checked == true) {;
+        }
+    }
+    return incrementa
+}
+
+
+function qtd_meses() {
+    var horasFuncionaisDia = 10;
+    var horasContratadas = document.querySelector("#Hr-cntr");
+    var horasAula = document.querySelector("#Hr-por-aula");
+    var resultado = document.querySelector("#teste");
+    resultado.textContent = SemanaCheckBox();
+    alert(SemanaCheckBox());
+}
