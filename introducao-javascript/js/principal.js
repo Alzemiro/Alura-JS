@@ -38,3 +38,12 @@ for (var i = 0; i < pacientes.length; i++) {
 
     }
 }
+
+titulo.addEventListener("click", function() {
+    console.log("eu fui clicado!");
+});
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", function() {
+    console.log("clicaram em mim!");
+});
