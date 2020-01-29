@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Placas</title>
+
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <style>
+        div {
+            width: 60mm;
+            height: 70mm;
+            border-radius: 1cm;
+            border-color: #2957A4;
+            border-style: solid;
+            padding: 5%;
+            float: left;
+            margin: 0.5cm;
+            background-image: url('unisc-montenegro.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-position-y: 30px;
+            background-size: 7cm;
+            -webkit-print-color-adjust: exact;
+        }
+        
+        p {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 150px;
+            margin: auto;
+            padding-top: 35%;
+            color: #2957A4;
+            text-shadow: 0.025em 0.02em 0.08em rgb(74, 124, 211);
+            border: 0.7em;
+        }
+    </style>
+    <div id="placa">
+        <p id="numero"></p>
+    </div>
+    <script>
+        var i = 0;
+        var cont = 1;
+        var numero = document.getElementById('numero');
+        while (i < 25) {
+            var seuNode = document.getElementById('placa');
+            var clone = seuNode.cloneNode(true);
+            document.body.appendChild(clone);
+            numero.innerHTML = cont;
+            cont++;
+            i++;
+        }
+    </script>
+</body>
+
+</html>
